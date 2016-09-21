@@ -46,12 +46,22 @@ winter=["December","January","February"]
 spring=["March","April","May"]
 summer=["June","July","August"]
 fall=["September","October","November"]
+season=""
 
 if month==todaymonth and day==todaydate:
     print("Happy birthday!")
 elif month=="October" and day==31:
     print("You were born on Halloween!")
-elif 
+else:
+    if month in winter:
+        season="winter"
+    elif month in spring:
+        season="spring"
+    elif month in summer:
+        season="summer"
+    elif month in fall:
+        season="fall"
+    if 
 
 
 
