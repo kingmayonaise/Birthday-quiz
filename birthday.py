@@ -1,7 +1,7 @@
 """
 birthday.py
-Author: <your name here>
-Credit: <list sources used, if any>
+Author: Daniel M
+Credit: Dad, internet, myself
 Assignment:
 
 Your program will ask the user the following questions, in this order:
@@ -42,16 +42,11 @@ year=int(input("And what year were you born in, "+name+"? "))
 day=int(input("And the day? "))
 
 #Seasons
-winter=["December","January","February"]
-spring=["March","April","May"]
-summer=["June","July","August"]
-fall=["September","October","November"]
+winter=["december","january","february"]
+spring=["march","april","may"]
+summer=["june","july","august"]
+fall=["september","october","november"]
 season=""
-
-if month==todaymonth and day==todaydate:
-    print("Happy birthday!")
-elif month=="October" and day==31:
-    print("You were born on Halloween!")
 
 if month in winter:
     season="winter"
@@ -71,7 +66,14 @@ elif year>=2000:
 else:
     group="Stone Age"
     
-print(name+" you are a "+season+" of the "+group+".")
+message=(name+" you are a "+season+" baby of the "+group+".")
+
+if month==todaymonth and day==todaydate:
+    message="Happy birthday!"
+elif month=="October" and day==31:
+    message="You were born on Halloween!"
+    
+print(message)
 
 
 
