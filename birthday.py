@@ -65,7 +65,7 @@ elif year<=1999 and year>=1990:
     group="nineties"
 elif year>=2000:
     group="two thousands"
-else:
+elif year<1980:
     group="Stone Age"
     
 message=(name+" you are a "+season+" baby of the "+group+".")
