@@ -70,7 +70,7 @@ elif year>=2000:
 elif year<1980:
     group="Stone Age"
     
-message=(name+" you are a "+season+" baby of the "+group+".")
+message=(name+", you are a "+season+" baby of the "+group+".")
 
 if month==todaymonth and day==todaydate:
     message="Happy birthday!"
