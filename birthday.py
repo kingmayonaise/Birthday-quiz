@@ -52,17 +52,26 @@ if month==todaymonth and day==todaydate:
     print("Happy birthday!")
 elif month=="October" and day==31:
     print("You were born on Halloween!")
-else:
-    if month in winter:
-        season="winter"
-    elif month in spring:
-        season="spring"
-    elif month in summer:
-        season="summer"
-    elif month in fall:
-        season="fall"
-    if 
 
+if month in winter:
+    season="winter"
+elif month in spring:
+    season="spring"
+elif month in summer:
+    season="summer"
+elif month in fall:
+    season="fall"
+    
+if year<=1989 and year>=1980:
+    group="eighties"
+elif year<=1999 and year>=1990:
+    group="nineties"
+elif year>=2000:
+    group="two thousands"
+else:
+    group="Stone Age"
+    
+print(name+" you are a "+season+" of the "+group+".")
 
 
 
