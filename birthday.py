@@ -48,6 +48,8 @@ summer=["june","july","august"]
 fall=["september","october","november"]
 season=""
 
+message=""
+
 if month in winter:
     season="winter"
 elif month in spring:
