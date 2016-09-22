@@ -74,7 +74,7 @@ message=(name+", you are a "+season+" baby of the "+group+".")
 
 if month==todaymonth and day==todaydate:
     message="Happy birthday!"
-elif month=="October" and day==31:
+elif month=="october" and day==31:
     message="You were born on Halloween!"
     
 print(message)
